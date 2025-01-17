@@ -19,6 +19,7 @@ dependencies:
   get_storage: ^2.1.1
   iconsax: ^0.0.8
   flutter_native_splash: ^2.4.4
+  smooth_page_indicator: ^1.2.0+3
 
 dev_dependencies:
   flutter_test:
@@ -28,28 +29,15 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/
-    - assets/logos/
+    - assets/images/on_boarding_images/
+    - assets/logos/    # Ensure this folder contains the 11197448.jpg image.
     - assets/icons/brands/
-  # fonts:
-  #   - family: Roboto
-  #     fonts:
-  #       - asset: assets/fonts/Roboto-Regular.ttf
-  #       - asset: assets/fonts/Roboto-Bold.ttf
-  #         weight: 700
-  #       - asset: assets/fonts/Roboto-Italic.ttf
-  #         style: italic
-  #   - family: OpenSans
-  #     fonts:
-  #       - asset: assets/fonts/OpenSans-Regular.ttf
-  #       - asset: assets/fonts/OpenSans-Bold.ttf
-  #         weight: 700
 
 flutter_native_splash:
-  color: "#272727" # Light mode background color
-  color_dark: "#272727" # Dark mode background color
-  image: assets/logos/logo_dark.png # Light mode logo
-  image_dark: assets/logos/logo_dark.png # Dark mode logo
-  android: true # Enable splash screen for Android
-  ios: true # Enable splash screen for iOS
-  web: false # Disable splash screen for web
+  color: "#272727"  # Light mode background color
+  color_dark: "#272727"  # Dark mode background color
+  image: assets/logos/logo_dark.png  # Light mode logo
+  image_dark: assets/logos/logo_dark.png  # Dark mode logo
+  android: true  # Enable splash screen for Android
+  ios: true  # Enable splash screen for iOS
+  web: false  # Disable splash screen for web
