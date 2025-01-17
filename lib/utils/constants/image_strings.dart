@@ -10,9 +10,9 @@ class Timage {
 
   //onBoardingImagel
   static const String onBoardingImagel1 =
-      'assets/images/on_boarding_images/20945573.jpg';
+      'assets/images/on_boarding_images/20945573.png';
   static const String onBoardingImagel2 =
-      'assets/images/on_boarding_images/3960310.jpg';
+      'assets/images/on_boarding_images/3960310-removebg.png';
   static const String onBoardingImagel3 =
-      'assets/images/on_boarding_images/11197448.jpg';
+      'assets/images/on_boarding_images/11197448-removebg.png';
 }

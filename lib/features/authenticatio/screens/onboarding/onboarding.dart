@@ -1,4 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:tech_cart/features/authenticatio/controllers.onboarding/controllers.onboarding.dart';
+import 'package:tech_cart/features/authenticatio/screens/onboarding/widgets/OnBoardingNextButton.dart';
+import 'package:tech_cart/features/authenticatio/screens/onboarding/widgets/onboarding_dot_navigation.dart';
+import 'package:tech_cart/features/authenticatio/screens/onboarding/widgets/onboarding_page.dart';
+import 'package:tech_cart/features/authenticatio/screens/onboarding/widgets/onboarding_skip.dart';
+import 'package:tech_cart/utils/constants/colorss.dart';
 import 'package:tech_cart/utils/constants/image_strings.dart';
 import 'package:tech_cart/utils/constants/sizes.dart';
 import 'package:tech_cart/utils/constants/text_strings.dart';
@@ -10,10 +20,13 @@ class OnBoardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controler = Get.put(OnBoardingControlle());
     return Scaffold(
       body: Stack(
         children: [
           PageView(
+            controller: controler.pageconroler,
+            onPageChanged: controler.updatePageIndicator,
             children: const [
               OnBoardingPage(
                 title: TTexts.onBoardingTitle1,
@@ -32,48 +45,9 @@ class OnBoardingScreen extends StatelessWidget {
               ),
             ],
           ),
-          // Positioned(
-          //     top: TDeviceUtils.getAppBarHeight(),
-          //     right: Tsize.defaultSpace,
-          //     child: TextButton(onPressed: () {}, child: const Text('skip')))
-        ],
-      ),
-    );
-  }
-}
-
-class OnBoardingPage extends StatelessWidget {
-  const OnBoardingPage({
-    super.key,
-    required this.image,
-    required this.title,
-    required this.subtitle,
-  });
-  final String image, title, subtitle;
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(Tsize.defaultSpace),
-      child: Column(
-        children: [
-          Image(
-            image: AssetImage(image),
-            width: THelperFunctions.screenwidth() * 0.8,
-            height: THelperFunctions.screenHeight() * 0.6,
-          ),
-          Text(
-            title,
-            style: Theme.of(context).textTheme.headlineMedium,
-            textAlign: TextAlign.center,
-          ),
-          SizedBox(
-            height: Tsize.spaceBtwItems,
-          ),
-          Text(
-            subtitle,
-            style: Theme.of(context).textTheme.bodyMedium,
-            textAlign: TextAlign.center,
-          )
+          OnBoardingSkip(),
+          OnBoardingDotNavigation(),
+          OnBoardingNextButton()
         ],
       ),
     );
