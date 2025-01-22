@@ -5,8 +5,9 @@ class Timage {
 
 //Social Logos
 
-  static const String google = '';
-  static const String facebook = '';
+  static const String google = 'assets/images/on_boarding_images/search.png';
+  static const String facebook =
+      'assets/images/on_boarding_images/facebook.png';
 
   //onBoardingImagel
   static const String onBoardingImagel1 =
@@ -15,4 +16,12 @@ class Timage {
       'assets/images/on_boarding_images/3960310-removebg.png';
   static const String onBoardingImagel3 =
       'assets/images/on_boarding_images/11197448-removebg.png';
+
+  static const String login = 'assets/logos/6310507_prev_ui.png';
+
+  static const String deliveredEmailIllustration =
+      'assets/images/on_boarding_images/3811384.png';
+
+  static const String confirmEmil =
+      'assets/images/on_boarding_images/5156366.png';
 }
