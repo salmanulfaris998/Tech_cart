@@ -20,6 +20,8 @@ dependencies:
   iconsax: ^0.0.8
   flutter_native_splash: ^2.4.4
   smooth_page_indicator: ^1.2.0+3
+  flutter_hooks: ^0.20.5
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:
@@ -32,6 +34,8 @@ flutter:
     - assets/images/on_boarding_images/
     - assets/logos/    # Ensure this folder contains the 11197448.jpg image.
     - assets/icons/brands/
+    - assets/images/popular Categres/
+    - assets/images/banner/
 
 flutter_native_splash:
   color: "#272727"  # Light mode background color

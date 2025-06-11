@@ -24,4 +24,37 @@ class Timage {
 
   static const String confirmEmil =
       'assets/images/on_boarding_images/5156366.png';
+
+  //popular categres
+
+  static const String camera_white =
+      'assets/images/popular Categres/cam_white.PNG';
+  static const String camera_black =
+      'assets/images/popular Categres/cam_black.PNG';
+  static const String lap_black =
+      'assets/images/popular Categres/lap_black.PNG';
+  static const String lap_white =
+      'assets/images/popular Categres/lap_whaite.PNG';
+  static const String phone_black =
+      'assets/images/popular Categres/phone_black.PNG';
+  static const String phone_white =
+      'assets/images/popular Categres/phone_white.PNG';
+  static const String watch_white =
+      'assets/images/popular Categres/whatch_white.PNG';
+  static const String whatch_black =
+      'assets/images/popular Categres/watch_black.PNG';
+  static const String speeker_white =
+      'assets/images/popular Categres/speeker_white.PNG';
+  static const String speeker_black =
+      'assets/images/popular Categres/speeker_BLACK.PNG';
+  static const String game_white =
+      'assets/images/popular Categres/game_white.PNG';
+  static const String game_black =
+      'assets/images/popular Categres/game_black.PNG';
+
+  //banner
+
+  static const String bestdevices = 'assets/images/banner/IMG_5996.JPEG';
+  static const String watch = 'assets/images/banner/IMG_5997.JPEG';
+  static const String headphone = 'assets/images/banner/IMG_5993.JPEG';
 }
