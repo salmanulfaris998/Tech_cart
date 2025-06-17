@@ -7,7 +7,7 @@ class BannerImages extends StatelessWidget {
     this.width,
     this.height,
     required this.imageradius,
-    this.backround = Colors.black, // Match with your app background
+    required this.backround, // Match with your app background
     this.fit = BoxFit.cover, // Ensures image fills fully
     this.padding,
     this.onpress,

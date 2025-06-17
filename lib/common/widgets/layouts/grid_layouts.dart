@@ -6,8 +6,9 @@ class Tgridlayaout extends StatelessWidget {
   const Tgridlayaout({
     super.key,
     required this.itemCount,
-    this.mainaxisexent = 296,
+    this.mainaxisexent = 250,
     required this.itemBuilder,
+    EdgeInsets? padding,
   });
   final int itemCount;
   final double? mainaxisexent;

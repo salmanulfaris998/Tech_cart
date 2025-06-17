@@ -2,24 +2,27 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:tech_cart/utils/constants/colorss.dart';
+import 'package:tech_cart/utils/helpers/helper_functions.dart';
 
 class Tcartcounter extends StatelessWidget {
-  const Tcartcounter({
+  Tcartcounter({
     super.key,
     required this.iconColor,
     required this.onpressed,
   });
+
   final Color iconColor;
   final VoidCallback onpressed;
   @override
   Widget build(BuildContext context) {
+    final darkmode = THelperFunctions.isdarkmod(context);
     return Stack(
       children: [
         IconButton(
             onPressed: () {},
             icon: Icon(
               Iconsax.shopping_bag,
-              color: Tcolors.white,
+              color: darkmode ? Tcolors.white : Tcolors.black,
             )),
         Positioned(
             right: 0,

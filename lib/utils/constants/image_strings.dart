@@ -57,4 +57,20 @@ class Timage {
   static const String bestdevices = 'assets/images/banner/IMG_5996.JPEG';
   static const String watch = 'assets/images/banner/IMG_5997.JPEG';
   static const String headphone = 'assets/images/banner/IMG_5993.JPEG';
+
+  //brand icons
+
+  static const String apple = 'assets/images/brand_icons/apple.PNG';
+  static const String samsung = 'assets/images/brand_icons/samsung.PNG';
+  static const String asuse = 'assets/images/brand_icons/asus.PNG';
+  static const String canon = 'assets/images/brand_icons/canon.PNG';
+  static const String samsung1 = '  assets/images/brand_icons/samsung1.PNG';
+
+//products
+//apple
+  static const String i16pro = 'assets/images/products/apple/iphone16pro.PNG';
+  static const String i13 = 'assets/images/products/apple/iphone13.PNG';
+  static const String watchapple = 'assets/images/products/apple/watch.PNG';
+  static const String iphone = 'assets/images/products/apple/phone.PNG';
+  static const String mac = 'assets/images/products/apple/mac.PNG';
 }

@@ -36,6 +36,9 @@ flutter:
     - assets/icons/brands/
     - assets/images/popular Categres/
     - assets/images/banner/
+    - assets/images/vertical card banner image/
+    - assets/images/brand_icons/
+    - assets/images/products/apple/
 
 flutter_native_splash:
   color: "#272727"  # Light mode background color

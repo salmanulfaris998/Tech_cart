@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:tech_cart/features/shop/screens/home/home.dart';
+import 'package:tech_cart/features/shop/screens/store/store.dart';
+import 'package:tech_cart/features/shop/screens/wishlist/wishlist.dart';
 import 'package:tech_cart/utils/constants/colorss.dart';
 import 'package:tech_cart/utils/helpers/helper_functions.dart';
 
@@ -64,17 +66,6 @@ class NavigationMenu extends HookWidget {
 
 class Listprov {
   static List<Widget> getContainers() {
-    return [
-      const Homescreen(),
-      Container(
-        color: Colors.blue,
-      ),
-      Container(
-        color: Colors.red,
-      ),
-      Container(
-        color: Colors.green,
-      ),
-    ];
+    return [const Homescreen(), const PopularStore(), const Favorite()];
   }
 }
