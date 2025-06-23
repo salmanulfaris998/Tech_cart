@@ -1,4 +1,6 @@
 class Timage {
+  //user image
+  static const String user = 'assets/images/user/user.jpg';
   //App Logos
   static const String darkAppLogo = 'assets/logos/tc-4-removebg.png';
   static const String lightAppLogo = 'assets/logos/IMG_7031 (1).PNG';

@@ -9,6 +9,7 @@ class myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: Tapptheme.lightTheme,
       darkTheme: Tapptheme.darkTheme,
       themeMode: ThemeMode.system,

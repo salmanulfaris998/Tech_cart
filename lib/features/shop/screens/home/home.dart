@@ -53,43 +53,44 @@ class Homescreen extends StatelessWidget {
       child: Column(
         children: [
           TprimeryHeaderwidget(
+              height: 400,
               child: Column(
-            children: [
-              const Thomeappbar(),
-              SizedBox(
-                height: Tsize.spaceBtSections,
-              ),
-              Tsearch_container(
-                darkmode: darkmode,
-                text: 'Search in Store',
-                icon: Iconsax.search_normal,
-                showbackround: true,
-                showborder: true,
-              ),
-              SizedBox(
-                height: Tsize.spaceBtSections,
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: Tsize.defaultSpace),
-                child: Column(
-                  children: [
-                    Tsectionheading(
-                      textcolor: darkmode ? Tcolors.dark : Tcolors.white,
-                      title: 'Popular Categres',
-                      showactionbutton: false,
+                children: [
+                  const Thomeappbar(),
+                  SizedBox(
+                    height: Tsize.spaceBtSections,
+                  ),
+                  Tsearch_container(
+                    darkmode: darkmode,
+                    text: 'Search in Store',
+                    icon: Iconsax.search_normal,
+                    showbackround: true,
+                    showborder: true,
+                  ),
+                  SizedBox(
+                    height: Tsize.spaceBtSections,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: Tsize.defaultSpace),
+                    child: Column(
+                      children: [
+                        Tsectionheading(
+                          textcolor: darkmode ? Tcolors.dark : Tcolors.white,
+                          title: 'Popular Categres',
+                          showactionbutton: false,
+                        ),
+                        SizedBox(
+                          height: Tsize.spaceBtwItems,
+                        ),
+                        ThomeCatagres(
+                            darkmode: darkmode,
+                            popularcatagryWhight: popularcatagryWhight,
+                            popularcatagryText: popularcatagryText),
+                      ],
                     ),
-                    SizedBox(
-                      height: Tsize.spaceBtwItems,
-                    ),
-                    ThomeCatagres(
-                        darkmode: darkmode,
-                        popularcatagryWhight: popularcatagryWhight,
-                        popularcatagryText: popularcatagryText),
-                  ],
-                ),
-              )
-            ],
-          )),
+                  )
+                ],
+              )),
           Padding(
               padding: const EdgeInsets.all(Tsize.defaultSpace),
               child: Column(

@@ -7,9 +7,11 @@ class TprimeryHeaderwidget extends StatelessWidget {
   const TprimeryHeaderwidget({
     super.key,
     required this.child,
+    required this.height,
   });
 
   final Widget child;
+  final double height;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class TprimeryHeaderwidget extends StatelessWidget {
         color: Tcolors.primary,
         padding: const EdgeInsets.all(0),
         child: SizedBox(
-          height: 400,
+          height: height,
           child: Stack(
             children: [
               const Positioned(

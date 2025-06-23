@@ -31,16 +31,21 @@ class Tcircularimage extends StatelessWidget {
       height: height,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
-          color: THelperFunctions.isdarkmod(context)
-              ? Tcolors.black
-              : Tcolors.white,
-          borderRadius: BorderRadius.circular(100)),
-      child: Image(
-        image: isnetworkimage
-            ? NetworkImage(image)
-            : AssetImage(image) as ImageProvider,
-        color:
-            THelperFunctions.isdarkmod(context) ? Tcolors.white : Tcolors.black,
+        color: background ??
+            (THelperFunctions.isdarkmod(context)
+                ? Tcolors.black
+                : Tcolors.white),
+        borderRadius: BorderRadius.circular(100),
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(100),
+        child: Image(
+          image: isnetworkimage
+              ? NetworkImage(image)
+              : AssetImage(image) as ImageProvider,
+          fit: fit,
+          color: overlaycolor,
+        ),
       ),
     );
   }

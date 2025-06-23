@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:tech_cart/features/personalization/screens/settings/settings.dart';
 import 'package:tech_cart/features/shop/screens/home/home.dart';
 import 'package:tech_cart/features/shop/screens/store/store.dart';
 import 'package:tech_cart/features/shop/screens/wishlist/wishlist.dart';
@@ -66,6 +67,11 @@ class NavigationMenu extends HookWidget {
 
 class Listprov {
   static List<Widget> getContainers() {
-    return [const Homescreen(), const PopularStore(), const Favorite()];
+    return [
+      const Homescreen(),
+      const PopularStore(),
+      const Favorite(),
+      const SettingScreen()
+    ];
   }
 }

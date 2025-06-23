@@ -21,7 +21,7 @@ class Favorite extends StatelessWidget {
     final bool hasWishlistItems =
         true; // Change this to false to see empty state
     final int wishlistItemCount =
-        hasWishlistItems ? 10 : 0; // Your actual item count
+        hasWishlistItems ? 0 : 0; // Your actual item count
 
     return Scaffold(
       appBar: Tappbar(
