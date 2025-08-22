@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/route_manager.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:tech_cart/common/widgets/image_widget/circularimage.dart';
+import 'package:tech_cart/features/personalization/screens/profile/profile_screen.dart';
 import 'package:tech_cart/utils/constants/colorss.dart';
 import 'package:tech_cart/utils/constants/image_strings.dart';
 
@@ -33,7 +36,7 @@ class TuserProfileTile extends StatelessWidget {
             Theme.of(context).textTheme.bodyMedium!.apply(color: Tcolors.white),
       ),
       trailing: IconButton(
-          onPressed: () {},
+          onPressed: () => Get.to(() => const ProfileScreen()),
           icon: Icon(
             Iconsax.edit,
             color: Theme.of(context).scaffoldBackgroundColor,
